@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Richard J Shelatz-->    
+<head>
+    <style>
+        h2{ color: red}
+        </style>    
+        <script>
+        // I added the alert to give the feel that you logged into a site that you were not othereized to view.
+        // It should make you think due to your blunder you caused the rocket to launch.    
+        alert("Unautherized access detected!")
+        var countdown = 50;
+        var timeout = 50000;
+        if (countdown == 0)
+                {   document.write("blastoff!")
+            }
+            //0 sec blastoff
+            setTimeout(() => {
+            document.getElementById("CountdownDisplay"). innerHTML = "Blastoff!";
+            countdown = countdown - 1;
+            }, timeout)
+            timeout = timeout - 1000;
+            //1 sec
+            setTimeout(() => {
+            document.getElementById("CountdownDisplay"). innerHTML = countdown;
+            countdown = countdown - 1;
+            }, timeout)
+            timeout = timeout - 1000;
+            //2 sec
+            setTimeout(() => {
+            document.getElementById("CountdownDisplay"). innerHTML = countdown;
+            countdown = countdown - 1;
+            }, timeout)
+            timeout = timeout - 1000;
+            //3 sec
+            setTimeout(() => {
+            document.getElementById("CountdownDisplay"). innerHTML = countdown;
+            countdown = countdown - 1;
+            }, timeout)
+            timeout = timeout - 1000;
+            //4 sec
+            setTimeout(() => {
+            document.getElementById("CountdownDisplay"). innerHTML = countdown;
+            countdown = countdown - 1;
+            }, timeout)
+            timeout = timeout - 1000;
+            //5 sec
+            setTimeout(() => {
+            document.getElementById("CountdownDisplay"). innerHTML = countdown;
+            countdown = countdown - 1;
+            }, timeout)
+            timeout = timeout - 1000;
+            //6 sec
+            setTimeout(() => {
+            document.getElementById("CountdownDisplay"). innerHTML = countdown;
+            countdown = countdown - 1;
+            }, timeout)
+            timeout = timeout - 1000;
+            //7 sec
+            setTimeout(() => {
+            document.getElementById("CountdownDisplay"). innerHTML = countdown;
+            countdown = countdown - 1;
+            }, timeout)
+            timeout = timeout - 1000;
+            //8 sec
+            setTimeout(() => {
+            document.getElementById("CountdownDisplay"). innerHTML = countdown;
+            countdown = countdown - 1;
+            }, timeout)
+            timeout = timeout - 1000;
+            //9 sec
+            setTimeout(() => {
+            document.getElementById("CountdownDisplay"). innerHTML = countdown;
+            countdown = countdown - 1;
+            }, timeout)
+            timeout = timeout - 1000;
+            //10 sec
+            setTimeout(() => {
+            document.getElementById("CountdownDisplay"). innerHTML = countdown;
+            countdown = countdown - 1;
+            }, timeout)
+            timeout = timeout - 1000;
+            //15 sec
+            setTimeout(() => {
+            document.getElementById("CountdownDisplay"). innerHTML = countdown;
+            countdown = countdown - 5;
+            }, timeout)
+            timeout = timeout - 5000;
+            //20 sec
+            setTimeout(() => {
+            document.getElementById("CountdownDisplay"). innerHTML = countdown;
+            countdown = countdown - 5;
+            }, timeout)
+            timeout = timeout - 5000;
+            //25 sec
+            setTimeout(() => {
+            document.getElementById("CountdownDisplay"). innerHTML = countdown;
+            countdown = countdown - 5;
+            }, timeout)
+            timeout = timeout - 5000;
+            //30 sec
+            setTimeout(() => {
+            document.getElementById("CountdownDisplay"). innerHTML = countdown;
+            countdown = countdown - 5;
+            }, timeout)
+            timeout = timeout - 5000;
+            //35 sec
+            setTimeout(() => {
+            document.getElementById("CountdownDisplay"). innerHTML = countdown;
+            countdown = countdown - 5;
+            }, timeout)
+            timeout = timeout - 5000;
+            //40 sec
+            setTimeout(() => {
+            document.getElementById("CountdownDisplay"). innerHTML = countdown;
+            countdown = countdown - 5;
+            }, timeout)
+            timeout = timeout - 5000;
+            //45 sec
+            setTimeout(() => {
+            document.getElementById("CountdownDisplay"). innerHTML = countdown;
+            countdown = countdown - 5;
+            }, timeout)
+            timeout = timeout - 5000;
+            //50 sec
+            setTimeout(() => {
+            document.getElementById("CountdownDisplay"). innerHTML = countdown;
+            countdown = countdown - 5;
+            }, timeout)
+            timeout = timeout - 5000;
+            //script is functioning as I want it to.
+            </script>
+        <h1>UAT Shuttle Launch</h1>
+        <h2>Warning!</h2>
+        <h3>This application initiates the lauch sequence.</h3>
+        </head>
+</body>
+<button type="button" onclick="StartTheCountdown()">Start Launch</button>
+<p id="CountdownDisplay">50</p>
+</html>
