@@ -1,0 +1,67 @@
+<!DOCTYPE html> 
+<html>
+<!--Richard J Shelatz-->  
+<Style>
+<!--Header color and font-->
+h {color: purple;
+font-size: large;
+}    
+<!--parigraph color-->
+p {color: red}
+
+</Style>
+<head>
+//header    
+   <h>Cloud City Royal Casino</h><br>
+   //title
+<title>Cloud City Royal Casino</title>
+//script
+<script type = "text/javascript">
+// alert welcome message
+alert("Welcome to Cloud City's Royal Casino.  On the behalf of Lando Calrission Welcome and good luck at the tables")
+//play function
+function play() {
+//varriable code for die 1 and die 2 that give a random interger between 1 and 6   
+var die1 = Math.floor((Math.random) ()*6) +1;
+var die2 = Math.floor((Math.random) ()*6) +1;
+//sum of die 1 and 2
+var sum = die1+die2
+//write code for die 1 with line break
+document.write("Die 1 = " + die1)
+document.write("<br/>")
+//write code for die 2 with line break
+document.write("Die 2 = " + die2)
+document.write("<br/>")
+// sum of die 1 and 2 with line break
+document.write("Sum = " + sum)
+document.write("<br/>")
+//if or statment
+if (sum == 7 || sum == 11)
+{ 
+//write code for if or statement   
+document.write("CRAPS - A Hut assocate is looking for you!")
+document.write("<br/>")
+}
+//else statement for die 1 and 2 both being doubles
+else if (die1== die2 && die1%2 == 0)
+{
+//write code for else statement with lin break
+document.write("DOUBLES - you win")
+document.write("<br/>")
+}
+
+}
+//write code for Simple Craps with line break
+document.write("Simple Craps")
+document.write("<br/>")
+//end of play function
+play()
+
+</script>
+</body>
+<!--paragraph-->
+<p>Word of Warning! If you lose to much you will be into the Huts for more then your life!</p>
+<!--button that runs the play function-->
+<button type="
+button" onclick="play()">Roll the Die</button>
+</html>
