@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <!--Richard J Shelatz-->
+<head>
+    <!--STYLE FOR FONT, SIZE, COLOR, CASE AND BACKGROUND-->
+    <style>
+    h1{ color: red;
+    font-size: xx-large;
+    font-variant-caps: petite-caps;
+    background-color: black;
+    background-size: contain;}
+   </style>
+   <style>
+    p2{ color: red;
+    font-size: xx-large;
+    font-weight: bolder;}
+    </style>
+
+</head>
+<h1>UAT Shuttle Launch!</h1>
+<body>
+<script>
+//start function
+function StartTheCountdown()
+{
+//variable for   
+var countdown = 10;
+var countdownTimer = setInterval(function()
+{    
+//if statement to display warning statment at 5 sec or less remaining
+if (countdown <= 5){
+document.getElementById("WarningStatment").innerHTML = "Warning Less Then 1/2 way to launch, time left!"
+}    
+//if statemnet that prints blast off when clock reaches zero and just display "Blast Off!"
+if (countdown == 0){    
+document.getElementById("CountdownDisplay").innerHTML = document.write("Blast Off!");}
+//else statement that does the count down
+else {
+document.getElementById("CountdownDisplay").innerHTML = countdown;}    
+countdown -= 1;}, 1000);
+console.log
+
+}
+</script>
+</body>
+<!--button and display paragraph-->
+<button type="button" onclick="StartTheCountdown()">Start Launch</button>
+<p id="CountdownDisplay">10</p>
+<!--line break-->
+<br>
+<!--paragraph for warning statment-->
+<p2 id="WarningStatment">Launch Inilized<p2>
+</html>
